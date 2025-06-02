@@ -2,8 +2,6 @@
 
 This notebook demonstrates foundational techniques in **data preprocessing**, **feature transformation**, and the application of a **linear regression model** using scikit-learn.
 
----
-
 ## 📋 Overview
 
 The goal of this project is to prepare a basic dataset for regression modeling by:
@@ -11,15 +9,11 @@ The goal of this project is to prepare a basic dataset for regression modeling b
 - Applying feature transformations (e.g., standard scaling, log transformation)
 - Fitting and evaluating a linear regression model
 
----
-
 ## 📁 Contents
 
 - `BasicDataTransformation_LinearRegression.ipynb`: Main notebook with data analysis and modeling steps.
 - `README.md`: Project description and usage instructions.
 - `california_housing_train.csv`: Data source.
-
----
 
 ## 🧰 Technologies Used
 
@@ -29,8 +23,6 @@ The goal of this project is to prepare a basic dataset for regression modeling b
 - Matplotlib
 - Seaborn
 - scikit-learn
-
----
 
 ## 📈 What You'll Learn
 
