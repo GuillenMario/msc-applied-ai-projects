@@ -1,4 +1,4 @@
-# **📚 Activity: Recommendation Systems **
+# **📚 Activity: Recommendation Systems**
 
 This activity focuses on building and evaluating **Recommendation Systems** as part of the master's program in Applied Artificial Intelligence.
 
