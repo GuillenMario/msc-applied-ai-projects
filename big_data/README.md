@@ -1,6 +1,8 @@
 # Big Data Project – MSc Applied AI
 
-This section is a standalone project developed during my **Master’s in Applied Artificial Intelligence**, focusing on **big data ingestion, processing, machine learning, and reporting** using PySpark and related tools.  
+**Status:** This project is currently in its draft phase. The structure, workflows, and notebooks are in place and reviewable, but some sections (metrics, results) may still be refined. 
+
+This section is a standalone project developed during my **Master’s in Applied Artificial Intelligence**, focusing on **big data ingestion, processing, machine learning, and reporting** using PySpark and related tools.
 
 The project simulates an **end-to-end big data pipeline**:  
 1. Reading and writing large datasets in efficient formats.  
