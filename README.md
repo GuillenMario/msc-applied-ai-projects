@@ -1,63 +1,84 @@
 # MSc Applied Artificial Intelligence – Projects Portfolio
 
-This repository contains selected projects from my **Master’s in Applied Artificial Intelligence**, covering topics across **machine learning** and **big data engineering**.  
-Each notebook demonstrates applied techniques on real datasets with a focus on **model evaluation, reproducibility, and interpretability**.
+This repository contains selected projects from my **Master’s in Applied Artificial Intelligence**, covering topics across **machine learning** and **big data engineering**. 
+
+Each notebook demonstrates applied techniques on real datasets with a focus on **model evaluation, reproducibility, and interpretability**.  
+
+⚠️ **Status**  
+- **Artificial Intelligence & ML** → Work in progress. Only **01 (Linear Regression)** has a polished version, others are drafts.  
+- **Big Data** → Draft phase but reviewable. Structure and workflows are in place, some results may still evolve.  
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure  
 
 ```
 .
 ├── notebooks/
-│   ├── artificial_intelligence_ml/
-│   │   ├── 01_basic_data_transformations_linear_regression.ipynb
-│   │   ├── 02_employee_attrition_ibm_hr.ipynb
-│   │   ├── 03_roc_pr_imbalance.ipynb
-│   │   ├── 04_learning_curves.ipynb
-│   │   ├── 05_recommendation_systems.ipynb
-│   │   └── 06_time_series_forecasting.ipynb
-│   └── big_data/
-│       ├── 01_readingwriting_pyspark_files.ipynb
-│       ├── 02_supervised_unsupervised_learning.ipynb
-│       ├── 03_result_quality_metrics.ipynb
-│       ├── 04_results_visualization.ipynb
-│       ├── 05_final_delivery.ipynb
-│       ├── data/
-│       ├── README.md   # dataset links and instructions 
-│       └── sample/     # small extracts for testing
+│   ├── artificial_intelligence_ml/                                     # ML coursework
+│   │   ├── _common/                                                    # shared setup, utils, style
+│   │   ├── 01_basic_data_transformations_linear_regression/
+│   │   │   ├── source/                                                 # original unpolished notebook
+│   │   │   ├── data/                                                   # raw & processed datasets
+│   │   │   ├── reports/                                                # figures & metrics artifacts
+│   │   │   ├── 01_basic_data_transformations_linear_regression.ipynb   # polished portfolio notebook ✅
+│   │   │   └── README.md                                               # module-level documentation
+│   │   ├── 02_employee_attrition_ibm_hr/ (🚧 draft)
+│   │   ├── 03_roc_pr_imbalance/ (🚧 draft)
+│   │   ├── 04_learning_curves/ (🚧 draft)
+│   │   ├── 05_recommendation_systems/ (🚧 draft)
+│   │   ├── 06_time_series_forecasting/ (🚧 draft)
+│   │   └── README.md                                                   # module-level documentation
+│   └── big_data/                                                       # Big Data coursework
+│       ├── 01_readingwriting_pyspark_files/
+│       │   ├── 01_pyspark_io_bigdata.ipynb
+│       │   └── README.md
+│       ├── 02_supervised_unsupervised_learning/
+│       │   ├── 02_supervised_unsupervised_learning.ipynb
+│       │   └── README.md
+│       ├── 03_result_quality_metrics/
+│       │   ├── 03_result_quality_metrics.ipynb
+│       │   └── README.md
+│       ├── 04_results_visualization/
+│       │   ├── 04_results_visualization.ipynb
+│       │   └── README.md
+│       ├── 05_final_delivery/
+│       │   ├── 05_final_delivery.ipynb
+│       │   └── README.md
+│       ├── data/                                                       # dataset instructions
+│       └── README.md                                                   # module-level documentation
 ├── environment.yml
 ├── .gitignore
-└── README.md
+└── README.md   # this file
 ```
 
 ---
 
-## 🤖 Artificial Intelligence & Machine Learning
+## Artificial Intelligence & Machine Learning
 Projects covering core ML techniques on structured datasets.
 
-| # | Project | Description | Key Techniques | Results / Metrics |
-|---|---------|-------------|----------------|------------------|
-| 1 | [Basic Data Transformations & Linear Regression](notebooks/artificial_intelligence_ml/01_basic_data_transformations_linear_regression.ipynb) | Regression on structured data with feature engineering & residual analysis | Pandas, Scikit-Learn, Matplotlib | Baseline vs Linear Regression, residual plots |
-| 2 | [Employee Attrition Analysis (IBM HR Dataset)](notebooks/artificial_intelligence_ml/02_employee_attrition_ibm_hr.ipynb) | Predicting employee attrition with focus on imbalance and interpretability | Logistic Regression, Random Forest, SHAP | **PR-AUC 0.71**, SHAP explanations, ethical considerations |
-| 3 | [ROC & PR Curves on Imbalanced Datasets](notebooks/artificial_intelligence_ml/03_roc_pr_imbalance.ipynb) | Comparison of ROC-AUC vs PR-AUC and threshold selection | Metrics, Calibration, Threshold tuning | Demonstrates why PR-AUC is preferred under imbalance |
-| 4 | [Learning Curves](notebooks/artificial_intelligence_ml/04_learning_curves.ipynb) | Bias-variance diagnosis via learning curves | Train/validation splits, cross-validation | Identifies underfitting vs overfitting |
-| 5 | [Recommendation Systems](notebooks/artificial_intelligence_ml/05_recommendation_systems.ipynb) | Collaborative filtering and baselines | Implicit ALS, Surprise, Matrix Factorization | **NDCG@10 +18%** vs popularity baseline |
-| 6 | [Time Series Forecasting](notebooks/artificial_intelligence_ml/06_time_series_forecasting.ipynb) | Forecasting demand with walk-forward validation | Prophet, SARIMA, Statsmodels | **MAPE 9.8%** on holdout, holiday effects analyzed |
+| Module | Status | Description |
+|--------|--------|-------------|
+| 01 – Basic Data Transformations & Linear Regression | ✅ Polished | Regression on structured data with feature engineering, Ridge/Lasso CV, and residual diagnostics. |
+| 02 – Employee Attrition (IBM HR Dataset) | 🚧 Draft | Predicting attrition under imbalance, focusing on interpretability. |
+| 03 – ROC & PR Curves for Imbalanced Data | 🚧 Draft | Comparison of ROC-AUC vs PR-AUC and threshold selection. |
+| 04 – Learning Curves | 🚧 Draft | Bias–variance diagnosis via learning curves. |
+| 05 – Recommendation Systems | 🚧 Draft | Collaborative filtering and baseline recommenders. |
+| 06 – Time Series Forecasting | 🚧 Draft | Forecasting with ARIMA and Prophet. |
 
 ---
 
-## 📊 Big Data Project
+## Big Data Project
 This section is structured as a standalone project, covering ingestion, learning, evaluation, and final reporting.  
 It includes its own `/data/` folder with sample files and instructions.
 
-| # | Project | Description | Key Techniques | Results / Metrics |
-|---|---------|-------------|----------------|------------------|
-| 1 | [Reading/Writing Big Data with PySpark](notebooks/big_data/01_readingwriting_pyspark_files.ipynb) | Efficient data I/O with PySpark | CSV vs Parquet, schema inference | Benchmarked throughput and schema handling |
-| 2 | [Supervised & Unsupervised Learning](notebooks/big_data/02_supervised_unsupervised_learning.ipynb) | Applying ML models in Spark | Spark MLlib, KMeans, Random Forest | Cluster quality (silhouette) and classification metrics |
-| 3 | [Result Quality Metrics](notebooks/big_data/03_result_quality_metrics.ipynb) | Cookbook of metrics for classification & regression | Spark MLlib metrics | ROC-AUC, PR-AUC, RMSE, F1 |
-| 4 | [Results Visualization](notebooks/big_data/04_results_visualization.ipynb) | Visualization of Spark ML results | Matplotlib, Seaborn | Confusion matrices, ROC/PR plots |
-| 5 | [Final Delivery](notebooks/big_data/05_final_delivery.ipynb) | Executive summary of methodology & outcomes | Consolidated results | High-level report for stakeholders |
+| Module | Status | Description |
+|--------|--------|-------------|
+| 01 – Reading/Writing Big Data with PySpark | 🚧 Draft | Efficient data I/O with PySpark (CSV vs Parquet). |
+| 02 – Supervised & Unsupervised Learning | 🚧 Draft | Applying Spark MLlib models (Random Forest, KMeans). |
+| 03 – Result Quality Metrics | 🚧 Draft | Cookbook of metrics for classification & regression in Spark. |
+| 04 – Results Visualization | 🚧 Draft | Visualization of MLlib results with Seaborn/Matplotlib. |
+| 05 – Final Delivery | 🚧 Draft | Consolidated summary for stakeholders. |
 
 ---
 
@@ -76,11 +97,6 @@ Create and activate the Conda environment:
 ```bash
 conda env create -f environment.yml
 conda activate applied_ai
-```
-
-Then launch Jupyter Lab:
-
-```bash
 jupyter lab
 ```
 
@@ -96,10 +112,10 @@ jupyter lab
 ---
 
 ## 📌 Key Takeaways
-- Applied a wide range of **ML algorithms** across regression, classification, forecasting, and recommendation.  
-- Emphasis on **model evaluation** with the right metrics (PR-AUC for imbalance, MAPE for forecasting, NDCG for recommendations).  
-- Explored **interpretability & ethics** in HR attrition prediction.  
-- Practiced **big data handling** with PySpark and end-to-end project structure.  
+- Demonstrates **ML end-to-end workflows** (from data audit → model → evaluation → conclusions).  
+- Includes **diagnostics & interpretability** (residual plots, feature importances, SHAP).  
+- Applies **big data processing** with PySpark and MLlib.  
+- Shows an evolving portfolio: one module polished, others reviewable drafts.  
 
 ---
 
