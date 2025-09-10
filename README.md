@@ -82,7 +82,7 @@ It includes its own `/data/` folder with sample files and instructions.
 
 ---
 
-## 📊 Datasets
+## Datasets
 Datasets are **not stored** in this repo due to size.  
 
 - For **AI/ML projects**: sample datasets are included in each folder.  
@@ -90,7 +90,7 @@ Datasets are **not stored** in this repo due to size.
 
 ---
 
-## ⚙️ Environment Setup
+## Environment Setup
 
 Create and activate the Conda environment:
 
@@ -102,7 +102,7 @@ jupyter lab
 
 ---
 
-## 🛠️ Tools & Libraries
+## Tools & Libraries
 
 - **Languages:** Python 3.11, PySpark 3.5  
 - **Libraries:** pandas, scikit-learn, matplotlib, seaborn, statsmodels, prophet, SHAP, implicit, scikit-surprise  
@@ -111,7 +111,7 @@ jupyter lab
 
 ---
 
-## 📌 Key Takeaways
+## Key Takeaways
 - Demonstrates **ML end-to-end workflows** (from data audit → model → evaluation → conclusions).  
 - Includes **diagnostics & interpretability** (residual plots, feature importances, SHAP).  
 - Applies **big data processing** with PySpark and MLlib.  
@@ -119,5 +119,5 @@ jupyter lab
 
 ---
 
-## 📜 License
+## License
 This project is released under the [MIT License](LICENSE).
