@@ -1,11 +1,11 @@
-# 🏠 California Housing — Linear Regression Case Study  
+# California Housing — Linear Regression Case Study  
 
-## 📌 Overview  
+## Overview  
 This project applies **linear regression models** to predict housing prices in California, using the [California Housing dataset](https://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html). The notebook demonstrates a complete ML workflow, from **data auditing** to **model evaluation**, with a focus on good practices and interpretability.  
 
 ---
 
-## 🔎 Workflow  
+## Workflow  
 1. **Data Loading & Audit**  
    - Checked for missing values and invalid entries.  
    - Generated descriptive statistics, skew/kurtosis, and IQR outlier reports.  
@@ -33,14 +33,14 @@ This project applies **linear regression models** to predict housing prices in C
 
 ---
 
-## 📊 Key Findings  
+## Key Findings  
 - **Top predictors:** `median_income`, `total_bedrooms`, `total_rooms`.  
 - **Performance:** RMSE ≈ 71k on test set (≈30% of average house value).  
 - **Limitations:** Linear models cannot capture non-linear dynamics of housing prices.  
 
 ---
 
-## 📂 Folder Structure  
+## Folder Structure  
 - **`_common/`** → Shared utilities (setup notebook, helper scripts, style files). This folder is outside the current California Housing folder.  
 - **`data/`**  → original datasets (e.g., `housing.csv`).  
 - **`reports/`**  
@@ -49,7 +49,7 @@ This project applies **linear regression models** to predict housing prices in C
 - **`source/`** → original unpolished notebooks provided as course material.  
 ---
 
-## ⚙️ How to Run  
+## How to Run  
 1. Clone the repository and install dependencies:  
    ```bash
    conda env create -f environment.yml
@@ -63,5 +63,5 @@ Outputs (plots and metrics) will be saved automatically to `reports/figures/` an
 
 ---
 
-## 📝 Takeaway  
+## Takeaway  
 Even when performance is limited, a well-structured linear regression workflow provides valuable insights into data quality, feature importance, and model assumptions — laying the groundwork for more complex models.  
