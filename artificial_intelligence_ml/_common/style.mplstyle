@@ -1,0 +1,7 @@
+# style.mplstyle
+axes.grid: True
+axes.labelsize: medium
+axes.titlesize: medium
+figure.autolayout: True
+lines.linewidth: 1.5
+legend.frameon: False
