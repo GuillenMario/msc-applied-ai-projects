@@ -5,7 +5,7 @@ This repository contains selected projects from my **Master’s in Applied Artif
 Each notebook demonstrates applied techniques on real datasets with a focus on **model evaluation, reproducibility, and interpretability**.  
 
 ⚠️ **Status**  
-- **Artificial Intelligence & ML** → Work in progress. Only **01 (Linear Regression)** has a polished version, others are drafts.  
+- **Artificial Intelligence & ML** → Two notebooks are now fully polished and portfolio-ready: **01 (Linear Regression)** and **02 (Employee Attrition Analysis — IBM HR Dataset)**. Remaining modules are in draft stage and will be progressively updated.
 - **Big Data** → Draft phase but reviewable. Structure and workflows are in place, some results may still evolve.  
 
 ---
@@ -17,17 +17,19 @@ Each notebook demonstrates applied techniques on real datasets with a focus on *
 ├── notebooks/
 │   ├── artificial_intelligence_ml/                                     # ML coursework
 │   │   ├── _common/                                                    # shared setup, utils, style
+│   │   ├── _drafts/                                                    # This folder contains notebooks still under development.  
 │   │   ├── 01_basic_data_transformations_linear_regression/
 │   │   │   ├── source/                                                 # original unpolished notebook
 │   │   │   ├── data/                                                   # raw & processed datasets
 │   │   │   ├── reports/                                                # figures & metrics artifacts
 │   │   │   ├── 01_basic_data_transformations_linear_regression.ipynb   # polished portfolio notebook ✅
 │   │   │   └── README.md                                               # module-level documentation
-│   │   ├── 02_employee_attrition_ibm_hr/ (🚧 draft)
-│   │   ├── 03_roc_pr_imbalance/ (🚧 draft)
-│   │   ├── 04_learning_curves/ (🚧 draft)
-│   │   ├── 05_recommendation_systems/ (🚧 draft)
-│   │   ├── 06_time_series_forecasting/ (🚧 draft)
+│   │   ├── 02_employee_attrition_ibm_hr/
+│   │   │   ├── source/                                                 # original unpolished notebook
+│   │   │   ├── data/                                                   # raw & processed datasets
+│   │   │   ├── reports/                                                # figures & metrics artifacts
+│   │   │   ├── 02_employee_attrition_ibm_hr.ipynb                      # polished portfolio notebook ✅
+│   │   │   └── README.md                                               # module-level documentation
 │   │   └── README.md                                                   # module-level documentation
 │   └── big_data/                                                       # Big Data coursework
 │       ├── 01_readingwriting_pyspark_files/
@@ -60,7 +62,7 @@ Projects covering core ML techniques on structured datasets.
 | Module | Status | Description |
 |--------|--------|-------------|
 | 01 – Basic Data Transformations & Linear Regression | ✅ Polished | Regression on structured data with feature engineering, Ridge/Lasso CV, and residual diagnostics. |
-| 02 – Employee Attrition (IBM HR Dataset) | 🚧 Draft | Predicting attrition under imbalance, focusing on interpretability. |
+| 02 — Employee Attrition Analysis (IBM HR Dataset) | ✅ Polished | End-to-end classification workflow predicting employee attrition using logistic regression, feature engineering, grid search, and imbalance-aware evaluation. |
 | 03 – ROC & PR Curves for Imbalanced Data | 🚧 Draft | Comparison of ROC-AUC vs PR-AUC and threshold selection. |
 | 04 – Learning Curves | 🚧 Draft | Bias–variance diagnosis via learning curves. |
 | 05 – Recommendation Systems | 🚧 Draft | Collaborative filtering and baseline recommenders. |
