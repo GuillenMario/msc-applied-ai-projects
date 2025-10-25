@@ -85,10 +85,10 @@ It includes its own `/data/` folder with sample files and instructions.
 ---
 
 ## Datasets
-Datasets are **not stored** in this repo due to size.  
+For most **AI/ML projects**, small sample datasets are included directly within each module folder under `data/`.
 
-- For **AI/ML projects**: sample datasets are included in each folder.  
-- For the **Big Data project**: dataset instructions are included inside `notebooks/big_data/data/README.md`.
+Only the **Big Data projects** omit datasets due to their size, instead, detailed download and setup instructions are provided inside
+`notebooks/big_data/data/README.md`.
 
 ---
 
