@@ -46,7 +46,8 @@ This project applies **linear regression models** to predict housing prices in C
 - **`reports/`**  
   - `figures/` → saved plots (residuals, QQ-plots, histograms).  
   - `artifacts/` → metrics files (`metrics.json`), model outputs.  
-- **`source/`** → original unpolished notebooks provided as course material.  
+- **`source/`** → original unpolished notebooks provided as course material.
+- 
 ---
 
 ## How to Run  
@@ -57,7 +58,7 @@ This project applies **linear regression models** to predict housing prices in C
    jupyter lab
    ```
 2. Open `01_basic_data_transformations_linear_regression/polished/01_basic_data_transformations_linear_regression_polished.ipynb`.  
-3. Ensure the dataset `housing.csv` is located under `data/raw/`.  
+3. Ensure the dataset `housing.csv` is located under `data/`.  
 
 Outputs (plots and metrics) will be saved automatically to `reports/figures/` and `reports/artifacts/`.  
 

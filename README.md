@@ -5,7 +5,7 @@ This repository contains selected projects from my **Master’s in Applied Artif
 Each notebook demonstrates applied techniques on real datasets with a focus on **model evaluation, reproducibility, and interpretability**.  
 
 ⚠️ **Status**  
-- **Artificial Intelligence & ML** → Work in progress. Only **01 (Linear Regression)** has a polished version, others are drafts.  
+- **Artificial Intelligence & ML** → Two notebooks are now fully polished and portfolio-ready: **01 (Linear Regression)** and **02 (Employee Attrition Analysis — IBM HR Dataset)**. Remaining modules are in draft stage and will be progressively updated.
 - **Big Data** → Draft phase but reviewable. Structure and workflows are in place, some results may still evolve.  
 
 ---
@@ -17,36 +17,46 @@ Each notebook demonstrates applied techniques on real datasets with a focus on *
 ├── notebooks/
 │   ├── artificial_intelligence_ml/                                     # ML coursework
 │   │   ├── _common/                                                    # shared setup, utils, style
+│   │   ├── _drafts/                                                    # This folder contains notebooks still under development.  
 │   │   ├── 01_basic_data_transformations_linear_regression/
 │   │   │   ├── source/                                                 # original unpolished notebook
 │   │   │   ├── data/                                                   # raw & processed datasets
 │   │   │   ├── reports/                                                # figures & metrics artifacts
 │   │   │   ├── 01_basic_data_transformations_linear_regression.ipynb   # polished portfolio notebook ✅
 │   │   │   └── README.md                                               # module-level documentation
-│   │   ├── 02_employee_attrition_ibm_hr/ (🚧 draft)
-│   │   ├── 03_roc_pr_imbalance/ (🚧 draft)
-│   │   ├── 04_learning_curves/ (🚧 draft)
-│   │   ├── 05_recommendation_systems/ (🚧 draft)
-│   │   ├── 06_time_series_forecasting/ (🚧 draft)
+│   │   ├── 02_employee_attrition_ibm_hr/
+│   │   │   ├── source/                                                 # original unpolished notebook
+│   │   │   ├── data/                                                   # raw & processed datasets
+│   │   │   ├── reports/                                                # figures & metrics artifacts
+│   │   │   ├── 02_employee_attrition_ibm_hr.ipynb                      # polished portfolio notebook ✅
+│   │   │   └── README.md                                               # module-level documentation
 │   │   └── README.md                                                   # module-level documentation
-│   └── big_data/                                                       # Big Data coursework
-│       ├── 01_readingwriting_pyspark_files/
-│       │   ├── 01_pyspark_io_bigdata.ipynb
-│       │   └── README.md
-│       ├── 02_supervised_unsupervised_learning/
-│       │   ├── 02_supervised_unsupervised_learning.ipynb
-│       │   └── README.md
-│       ├── 03_result_quality_metrics/
-│       │   ├── 03_result_quality_metrics.ipynb
-│       │   └── README.md
-│       ├── 04_results_visualization/
-│       │   ├── 04_results_visualization.ipynb
-│       │   └── README.md
-│       ├── 05_final_delivery/
-│       │   ├── 05_final_delivery.ipynb
-│       │   └── README.md
-│       ├── data/                                                       # dataset instructions
-│       └── README.md                                                   # module-level documentation
+│   ├── big_data/                                                       # Big Data coursework
+│   │   ├── 01_readingwriting_pyspark_files/
+│   │   │   ├── 01_pyspark_io_bigdata.ipynb
+│   │   │   └── README.md
+│   │   ├── 02_supervised_unsupervised_learning/
+│   │   │   ├── 02_supervised_unsupervised_learning.ipynb
+│   │   │   └── README.md
+│   │   ├── 03_result_quality_metrics/
+│   │   │   ├── 03_result_quality_metrics.ipynb
+│   │   │   └── README.md
+│   │   ├── 04_results_visualization/
+│   │   │   ├── 04_results_visualization.ipynb
+│   │   │   └── README.md
+│   │   ├── 05_final_delivery/
+│   │   │   ├── 05_final_delivery.ipynb
+│   │   │   └── README.md
+│   │   ├── data/                                                       # dataset instructions
+│   │   └── README.md                                                   # module-level documentation
+│   └── natural_language_processing/
+│   │   ├── 01_LLM_RAG_Chatbot/
+│   │   │   ├── 01_chatbot_LLM_RAG.ipynb
+│   │   └── README.md
+│   └── autonomous_navigation/
+│       ├── 01_imitation_learning/
+│       │   ├── 01_ImitationLearning.ipynb
+│       └── README.md
 ├── environment.yml
 ├── .gitignore
 └── README.md   # this file
@@ -60,7 +70,7 @@ Projects covering core ML techniques on structured datasets.
 | Module | Status | Description |
 |--------|--------|-------------|
 | 01 – Basic Data Transformations & Linear Regression | ✅ Polished | Regression on structured data with feature engineering, Ridge/Lasso CV, and residual diagnostics. |
-| 02 – Employee Attrition (IBM HR Dataset) | 🚧 Draft | Predicting attrition under imbalance, focusing on interpretability. |
+| 02 — Employee Attrition Analysis (IBM HR Dataset) | ✅ Polished | End-to-end classification workflow predicting employee attrition using logistic regression, feature engineering, grid search, and imbalance-aware evaluation. |
 | 03 – ROC & PR Curves for Imbalanced Data | 🚧 Draft | Comparison of ROC-AUC vs PR-AUC and threshold selection. |
 | 04 – Learning Curves | 🚧 Draft | Bias–variance diagnosis via learning curves. |
 | 05 – Recommendation Systems | 🚧 Draft | Collaborative filtering and baseline recommenders. |
@@ -82,11 +92,29 @@ It includes its own `/data/` folder with sample files and instructions.
 
 ---
 
-## Datasets
-Datasets are **not stored** in this repo due to size.  
+## Natural Language Processing
+Projects covering LLM-based systems and retrieval-augmented generation.
 
-- For **AI/ML projects**: sample datasets are included in each folder.  
-- For the **Big Data project**: dataset instructions are included inside `notebooks/big_data/data/README.md`.
+| Module | Status | Description |
+|--------|--------|-------------|
+| 01 – LLM + RAG Chatbot | 🚧 Draft | Retrieval-augmented chatbot over document collections using ChromaDB, multilingual embeddings, and a multilingual LLM for grounded Q&A. |
+
+---
+
+## Autonomous Navigation
+Projects covering learning-based control and perception for autonomous systems.
+
+| Module | Status | Description |
+|--------|--------|-------------|
+| 01 – Imitation Learning | 🚧 Draft | End-to-end steering-angle prediction from camera images and driving commands using a multi-input CNN + dense network. |
+
+---
+
+## Datasets
+For most **AI/ML projects**, small sample datasets are included directly within each module folder under `data/`.
+
+Only the **Big Data projects** omit datasets due to their size, instead, detailed download and setup instructions are provided inside
+`notebooks/big_data/data/README.md`.
 
 ---
 
